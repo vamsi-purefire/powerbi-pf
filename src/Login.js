@@ -11,6 +11,7 @@ const Login = () => {
   <h1>Login to Access your reports</h1>
   <p>Click the button below to log in with Microsoft:</p>
   <button onClick={handleLogin}>Login with Microsoft</button>
+
   
   </div>
     
