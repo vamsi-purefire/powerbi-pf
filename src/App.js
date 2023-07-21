@@ -1,18 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
 import { PowerBIEmbed } from 'powerbi-client-react';
 import { models } from 'powerbi-client';
-import React, { useState, useEffect, ReactDOM } from 'react';
+import React, { useState, useEffect } from 'react';
 import Login from './Login';
-import { runWithAdal } from 'react-adal';
-import { authContext, adalApiFetch, adalConfig } from './adalConfig'; // Create this file in the n
-import Appss from './AppHome';
+import { authContext, adalConfig } from './adalConfig'; // Create this file in the n
 
 
 const App = () => {
-  const login = () => {
-    authContext.login();
-  };
 
   useEffect(() => {
     authContext.handleWindowCallback();
